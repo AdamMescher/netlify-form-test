@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <body>
+        <h1>Contact Me</h1>
         <form name="contact" method="POST" data-netlify="true">
             <label for="name">Name</label>
             <input type="text" id="name" />
@@ -8,10 +9,19 @@
             <input type="email" id="email" />
             <label for="message">Message</label>
             <textarea id="message"></textarea>
-            <input type="submit" value="Just Gonna Send It"/>
+            <input class="submit-btn" type="submit" value="Just Gonna Send It"/>
         </form>
     </body>
     <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
         form {
             display: flex;
             flex-direction: column;
@@ -19,6 +29,7 @@
             margin-left: 20%;
         }
         label {
+            margin-top: 2rem;
             font-size: 2em;
             font-family: sans-serif;
         }
@@ -32,6 +43,16 @@
             line-height: 1.2em;
             height: 10rem;
             font-family: serif;
+        }
+        .submit-btn {
+            margin-top: 2rem;
+            background: none;
+            border: 2px solid black;
+        }
+        .submit-btn:hover {
+            background: black;
+            color: white;
+            cursor: pointer;
         }
     </style>
 </html>
