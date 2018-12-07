@@ -3,12 +3,9 @@
     <body>
         <h1>Contact Me</h1>
         <form name="contact" method="POST" data-netlify="true">
-            <label for="name">Name</label>
-            <input required type="text" id="name" />
-            <label for="email">Email</label>
-            <input required type="email" id="email" />
-            <label for="message">Message</label>
-            <textarea required id="message"></textarea>
+            <label for="full-name">Name  <input required type="text" id="full-name" /></label>
+            <label for="email">Email <input required type="email" id="email" /> </label>
+            <label for="message">Message  <textarea required id="message"></textarea></label>
             <div data-netlify-recaptcha></div>
             <input class="submit-btn" type="submit" value="Just Gonna Send It"/>
         </form>
