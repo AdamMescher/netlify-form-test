@@ -2,6 +2,25 @@
 
 ### Testing Netlify static site form submissions
 
+## Working Example
+
+[Live Site](https://zealous-kepler-45c703.netlify.com/)
+
+```html
+<form name="contact" method="POST" data-netlify="true">
+    <label for="full-name">Your Name<input required name="name" type="text" id="name" /></label>
+    <label for="email">Your Email<input required name="email" type="email" id="email" /> </label>
+    <label for="phone">Your Phone Number (optional)<input name="phone" type="tel" id="phone" /> </label>
+    <label for="body">Message<textarea required name="body" id="body"></textarea></label>
+    <div data-netlify-recaptcha></div>
+    <input class="submit-btn" type="submit" value="Just Gonna Send It"/>
+</form>
+```
+
+
+
+### Docs and Common Problems
+
 [Netlify Form Docs](https://www.netlify.com/docs/form-handling/)
 
 [Why my forms were blank](https://stackoverflow.com/a/49859661)
