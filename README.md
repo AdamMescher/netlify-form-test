@@ -6,6 +6,8 @@
 
 [Live Site](https://zealous-kepler-45c703.netlify.com/)
 
+<form> code:
+
 ```html
 <form name="contact" method="POST" data-netlify="true">
     <label for="full-name">Your Name<input required name="name" type="text" id="name" /></label>
