@@ -1,6 +1,6 @@
 # netlify-form-test
 
-### Testing Netlify static site form submissions
+Repository for testing [Netlify](https://www.netlify.com/) static forms
 
 ## Working Example
 
